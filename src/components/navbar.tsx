@@ -8,7 +8,7 @@ export const Navbar = () => {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link to="/" className="mr-6 flex items-center space-x-2 font-bold">
-            Code & Hoops
+            MR
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link to="/about" className="transition-colors hover:text-foreground/80">About</Link>

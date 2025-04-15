@@ -2,28 +2,82 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PurpleSection } from "@/components/purple-section";
 
 const projects = [
   {
-    title: "Project Name 1",
-    description: "Brief description of the project and its impact",
-    tech: ["Python", "Django", "React"],
+    title: "Compitive programing Platform(like hackerrank)",
+    description: "Compitive coding platform for problem solving",
+    tech: ["Python", "Django", "React","docker"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://demo.project1.com",
-    image: "/placeholder.svg"
+    demo: "https://itcp.com",
+    image: "/pic/itcp.png"
   },
+  {
+    title: "Club Manager",
+    description: "Club manager ",
+    tech: ["C#", ".Net", "Sql"],
+    github: "https://github.com/Mohamed-Rebbouh/club-manager_desktop",
+    demo: "https://itcp.com",
+    image: "/pic/itcm.jpg"
+  },
+  {
+    title: "Nuerel Style Transfer",
+    description: "EXP:Turning a photo of a city into a painting that looks like it was made by Van Gogh or Picasso",
+    tech: ["python", "torch", "CNN","streamlit"],
+    github: "https://github.com/Mohamed-Rebbouh/nuerel-style-transfer",
+    demo: "https://itcp.com",
+    image: "/pic/NST.png"
+  },
+  {
+    title: "Windows Manager(windows)",
+    description: "A lightweight window manager for better control and customization of desktop environments",
+    tech: ["C", "Gcc-x85", "win32-Api","Cmak"],
+    github: "https://github.com/Mohamed-Rebbouh/wm_windows",
+    demo: "https://itcp.com",
+    image: "/pic/wm.png"
+  },
+  {
+    title: "Face Recognition System",
+    description: "A real-time face recognition system using deep learning techniques for identification and verification tasks.",
+    tech: ["Python", "OpenCV", "Dlib", "FaceNet"],
+    github: "https://github.com/Mohamed-Rebbouh/face-recognition",
+    demo: "https://itcp.com",
+    image: "/pic/face_detected_unknown.jpg"
+  },
+  {
+    title: "Face Detection System",
+    description: "A fast and accurate face detection system that identifies human faces in images or video streams in real-time.",
+    tech: ["Python", "OpenCV", "Haar Cascades", "DNN", "MediaPipe"],
+    github: "https://github.com/Mohamed-Rebbouh/face-detection",
+    demo: "https://itcp.com",
+    image: "/pic/face.jpg"
+  },
+  {
+    "title": "API for Code Execution",
+    "description": "A secure and scalable API service that allows real-time execution of code snippets in multiple programming languages, ideal for competitive platforms, online judges, and educational tools.",
+    "tech": ["Bun", "Docker", "express"],
+    "github": "https://github.com/Rebbouh-Mohamed/API_Code_Excution",
+    "demo": "https://itcp.com",
+    "image": "/pic/code.png"
+  }
+  
+  
+  
+  
   // Add more projects as needed
 ];
 
 const Projects = () => {
   return (
+    <PurpleSection variant="gradient" className="min-h-screen">
     <motion.div 
       className="container py-24 px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-4xl font-bold mb-12">Projects</h1>
+      <h1 className="text-4xl font-bold mb-12">Projects Examples</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <motion.div
@@ -36,7 +90,7 @@ const Projects = () => {
             <img 
               src={project.image} 
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-30 object-cover"
             />
             <div className="p-6">
               <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
@@ -70,6 +124,7 @@ const Projects = () => {
         ))}
       </div>
     </motion.div>
+    </PurpleSection>
   );
 };
 

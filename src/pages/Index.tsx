@@ -16,10 +16,20 @@ const Index = () => {
           <GlowCard className="p-6">
             <div className="flex items-center gap-2">
               <Code2 className="h-5 w-5 text-purple-500" />
+              <h3 className="font-semibold">Specializations</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              web dev,desktop,IA(ML,DL,DS),Software Engineer,
+              ,embaded sys,"Mainlly backend dev" ,..
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-2">
+              <Code2 className="h-5 w-5 text-purple-500" />
               <h3 className="font-semibold">Languages</h3>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Python, TypeScript, C++, Rust
+              Python,C# ,TypeScript ,C++,Java ,..
             </p>
           </GlowCard>
           <GlowCard className="p-6">
@@ -28,7 +38,16 @@ const Index = () => {
               <h3 className="font-semibold">Frameworks</h3>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              React, Django, Express, TensorFlow
+              React, Django, Express, torch,flask,.net,...
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-2">
+              <Code2 className="h-5 w-5 text-purple-500" />
+              <h3 className="font-semibold">IA</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Computer Vision ,ML,DS
             </p>
           </GlowCard>
         </div>
@@ -42,10 +61,28 @@ const Index = () => {
           <GlowCard className="p-6">
             <div className="flex items-center gap-2">
               <Trophy className="h-5 w-5 text-purple-500" />
+              <h3 className="font-semibold">Compitive Event</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Be a part +17 compitive programing event 
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-2">
+              <Trophy className="h-5 w-5 text-purple-500" />
               <h3 className="font-semibold">Hackathons</h3>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Won 3 major hackathons in 2024
+              Won 2 major hackathons 
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-2">
+              <Trophy className="h-5 w-5 text-purple-500" />
+              <h3 className="font-semibold">Datathons</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Won 1 major Datathons 
             </p>
           </GlowCard>
           <GlowCard className="p-6">
@@ -54,7 +91,16 @@ const Index = () => {
               <h3 className="font-semibold">Open Source</h3>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              500+ GitHub contributions
+              +20 GitHub contributions
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-2">
+              <Star className="h-5 w-5 text-purple-500" />
+              <h3 className="font-semibold">Projects</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              a Lot between small,meduim and large 
             </p>
           </GlowCard>
         </div>

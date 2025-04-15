@@ -1,8 +1,10 @@
 
+import { PurpleSection } from "@/components/purple-section";
 import { motion } from "framer-motion";
 
 const Blog = () => {
   return (
+    <PurpleSection variant="gradient" className="min-h-screen">
     <motion.div 
       className="container max-w-4xl py-24 px-4"
       initial={{ opacity: 0, y: 20 }}
@@ -25,6 +27,7 @@ const Blog = () => {
         </motion.article>
       </div>
     </motion.div>
+    </PurpleSection>
   );
 };
 
